@@ -19,7 +19,7 @@
 // var totalLetters = []
 // for (var j = 0; j < wordLength; j ++){
 //   totalLetters.push('_');
-// }
+// }    
 // lettersInWord = computerGuessWord.split("")
 
 
@@ -91,9 +91,12 @@ var rightGuessWord = [];//this stores the corrected key pressed letter guess acc
 
 var inputKeypressed = ""; // this stores the key pressed letter
 
-var randomWord = ["Bootcamp", "Developer", "Northwestern", "Evanston", "Campus"];
+var randomWord = ["ConAir", "NationalTreasure", "WickerMan", "FaceOff", "GhostRider"];
 
+// I CANT FIGURE OUT WHY THE computerGuessWord VARIABLE WORKS EVEN THOUGH ITS NOT DEFINED UNTIL I CODED FOR THE RESET FUNCTION. WHEN I TRIED
+// THIS WITHOUT THE SKELETON ORIGINALLY I NEEDED TO ADD A FLOOR.MATH COMPONENT SO IT WOULD PICK A RANDOM WORD.
 
+// ALSO I CAN'T FIGURE OUT HOW TO INCLUDE SPACED IN MY WORDS. IF WE AD MORE TIME I WOULD CONTINUE TO TEST BUT I TOO SPOOKED TO BREAK MY CODE TRYING.
 
 
 //wordGame object has the property values and methods to play this word guessing game.
@@ -142,7 +145,7 @@ var wordGame = {
         // then write an alert(You've lost!) message, increments the this.losses++ and call this.resetGame()
 
         if (numberOfRemainingGuesses === 0) {
-            alert("uh-oh, try again!");
+            alert("Uh-oh, try again!");
             this.losses++;
             this.resetGame();
 
@@ -324,4 +327,12 @@ document.onkeyup = function (event) {
 
 }
 
+var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "assets/audio/bees.mp3");
+
+
+    $(".beesBtn").on("click", function() {
+      audioElement.play();
+    });
+  
 

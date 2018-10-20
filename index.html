@@ -8,52 +8,86 @@
     <title>Word Guess Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
 <!-- during the first time loading the page, the body tag will call the initialize_Game() -->
-<body onload=initialize_Game()>
+<body class ="wickCage" onload=initialize_Game()>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    
 
-    <div class="container">
+    <h1 class= "cageTitle googFont">CAGED IN</h1>
 
-        <div class="row">
-            <div class="col-md-12">
+    <div class="allStuff/">
 
-                <div id="game-section">
-                    <p>Press any key to get started!</p>
+        
+            <div >
+               
+                    <img src="assets/images/cageOne.jpg" class="picSizeOne" height="600px" width="450px">
+                    
+                </div>
+            
+    
+                <div>
+                <div id="game-section" class="mainCage googFont">
+                    <p></p>
                     <div>
-                      <h3 class="section-title">Wins</h3>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+                       
+
+                      <h3 class="section-title googFont">Wins</h3>
                       <!-- The div where our wins will be shown. -->
                       <div id="showWins"></div>
                     </div>
 
                     <div>
-                        <h3 class="section-title">Losses</h3>
+                        <h3 class="section-title googFont">Losses</h3>
                         <!-- The div where our wins will be shown. -->
                         <div id="showLosses"></div>
                       </div>
                     <div id="current-word-section">
-                      <h3 class="section-title">Current Word</h3>
+                      <h3 class="section-title googFont">Current Word</h3>
                       <!-- The div where our current word (and guessing progress) will be shown. -->
                       <div id="current-word"></div>
                     
                     </div>
                     <div id="guesses-remaining-section">
-                      <h3 class="section-title">Number of Guesses Remaining</h3>
+                      <h3 class="section-title googFont">Number of Guesses Remaining</h3>
                       <!-- The div where our remaining guesses will be shown. -->
                       <div id="guesses-remaining"></div>
                     </div>
                     <div id="guessed-letters-section">
-                      <h3 class="section-title">Letters Already Guessed</h3>
+                      <h3 class="section-title googFont">Letters Already Guessed</h3>
                       <!-- The div where our guesses letters will be shown. -->
                       <div id="guessed-letters"></div>
                     </div>
+                    <br>
+                    <br>
+
+                    <div>
+                        <button class="btn btn-warning btn-xs beesBtn btnFont">
+                          Hint!
+                        </button>
+                    </div>
+                    
+                    
+
+
                   </div>
+                </div>
+                <div >
+               
+                    <img src="assets/images/cageTwo.jpg" class="picSizeTwo" height="600px" width="450px">
+                    
+                </div>
+
                 
-            </div>
-        </div>
-
-    </div>
-
+    
+</div>
 
 <script src="assets/java/wordguess.js"></script>
 
@@ -65,4 +99,4 @@
 
 </body>
 
-</html>
+</html>     

@@ -1,0 +1,83 @@
+body {
+    overflow-x: hidden;
+   margin:0;
+   padding:0;
+   background-image: url("../images/cageghost.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+#game-section { 
+    text-align: center; 
+
+
+}
+
+h1{
+    margin:0;
+    background-color: black;
+}
+
+.cageTitle{
+    text-align: center;
+}
+
+.googFont{
+    font-family: 'Permanent Marker', cursive;
+    color: greenyellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.wickCage {
+    /* background-image: url("../images/wickcage.jpg"); */
+    background-position: center;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; */
+    /* z-index: -1;
+    float: left;
+    width:33%;  */
+/* z-index:-9;
+    background-position: left;
+    width:33%; */
+}
+
+.picSizeOne{
+    float:left;
+    /* width:30%; */
+    /* height: 100%; */
+    margin-left:20px;
+}
+.mainCage{
+    float:left;
+    width:30%;
+    height: 100%;
+}
+.picSizeTwo{
+    float:left;
+    /* width:30%; */
+    /* height: 100%; */
+    /* margin-left:5%; */
+}
+
+.container{
+    margin:0px 0px 0px 0px;
+    
+}
+
+body{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+
+
+}
+
+.allStuff{
+    margin-left:10%;
+}
+
+.btnFont{
+    font-size: 28px;
+}
